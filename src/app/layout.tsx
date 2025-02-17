@@ -6,8 +6,8 @@ import "./globals.css";
 import type React from "react";
 
 export const metadata: Metadata = {
-  title: "slop.sh",
-  description: "this site sucks lmao",
+  title: "slop.sh - A Developer's Hub",
+  description: "Welcome to slop.sh, a hub for web development projects and experiments.",
   icons: [
     {
       url: "/favicon.svg",
@@ -18,8 +18,8 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://slop.sh",
-    title: "slop.sh",
-    description: "this site sucks lmao",
+    title: "slop.sh - A Developer's Hub",
+    description: "Welcome to slop.sh, a hub for web development projects and experiments.",
     images: [
       {
         url: "/meta.png",
@@ -41,13 +41,13 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <Head>
-        <title>slop.sh</title>
-        <meta name="description" content="sloppy slop" />
+        <title>slop.sh - A Developer's Hub</title>
+        <meta name="description" content="Welcome to slop.sh, a hub for web development projects and experiments." />
         <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://slop.sh" />
-        <meta property="og:title" content="slop.sh" />
-        <meta property="og:description" content="sloppy slop" />
+        <meta property="og:title" content="slop.sh - A Developer's Hub" />
+        <meta property="og:description" content="Welcome to slop.sh, a hub for web development projects and experiments." />
         <meta property="og:image" content="/meta.png" />
         <meta property="og:image:width" content="900" />
         <meta property="og:image:height" content="900" />

@@ -19,6 +19,17 @@ export default function AboutSection() {
         currently working on a few projects primarily in the web development
         space, and am really happy with the progress I have made so far.
       </p>
+      <p className="text-muted-foreground leading-relaxed">
+        I enjoy working with modern web technologies like React, Next.js, and Tailwind CSS. 
+        I am also interested in exploring backend development with Node.js and Express. 
+        In my free time, I like to experiment with new tools and frameworks, and contribute 
+        to open-source projects.
+      </p>
+      <p className="text-muted-foreground leading-relaxed">
+        Feel free to check out my projects and get in touch if you have any questions or 
+        collaboration ideas. I am always open to learning new things and connecting with 
+        fellow developers.
+      </p>
     </motion.div>
   );
 }

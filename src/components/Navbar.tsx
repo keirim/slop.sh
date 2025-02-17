@@ -19,6 +19,17 @@ const linkVariants = {
   },
 };
 
+const navVariants = {
+  hidden: { opacity: 0, y: -20 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.5,
+    },
+  },
+};
+
 export default function Navbar() {
   const [isMobile, setIsMobile] = useState(false);
   const { theme, setTheme } = useTheme();
@@ -39,9 +50,9 @@ export default function Navbar() {
   return (
     <div className="flex justify-center">
       <motion.nav
-        initial={{ opacity: 0, y: -20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5 }}
+        initial="hidden"
+        animate="visible"
+        variants={navVariants}
         className="bg-background/50 backdrop-blur-sm text-foreground flex items-center justify-between h-14 sm:h-16 z-50 w-[95%] sm:w-[90%] md:w-[85%] max-w-4xl fixed top-2 sm:top-4 rounded-lg shadow-lg border border-border px-2 sm:px-4"
       >
         <div className="flex items-center gap-8">
